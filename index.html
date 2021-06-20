@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me</title>
+        <link href="css/display.css" type="text/css" rel="stylesheet"/>
+        <link href="css/print.css" media="print" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="app" class="grid">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./interests.html">Interests</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./galleria.html">Galleria</a>
+            </nav>
+            
+            <!--start of introduction-->
+            <div>
+                <h1>About Me</h1>
+                <p> <img src="images/aboutme.jpeg" alt="photo of lupe" width="300" class="align-right"/> Hello, my name is Guadalupe Rangel. I like to go by Lupe for short though.
+                    I currently live in the San Francisco Bay Area. I am orginally from SoCal and I enjoy the sunny weather.
+                    I am a Software Engineer at a data analytics company in San Francisco, California.
+                    I am also a master student at Boston University; go Terriers! I am hoping to complete my Master of Science in Software Development in the
+                    Summer of 2022.
+                </p>
+            </div>
+            
+            <!-- <figure>
+                <img src="images/aboutme.jpeg" alt="photo of lupe" width="300"/>
+            </figure> -->
+            <br />
+            <!--end of introduction-->
+            
+            <br />
+            <hr />
+            <footer>
+                &copy; 2021 Lupe's Page
+            </footer> 
+        </div>
+  
+        <!-- <script src="js/webpage-functions.js"></script> -->
+
+        <!--including vue.js-->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+        <!--Creating Vue session-->
+        <script>
+            var app = new Vue({
+                el: "#app",
+                data: {
+                    link: "https://www.linkedin.com/in/guadalupe-rangel/"
+                }
+            })
+        </script>
+    </body>
+</html>

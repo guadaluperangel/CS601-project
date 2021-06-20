@@ -90,8 +90,9 @@ footer{
 
 video{
     right: 0;
+    padding-top: 100px;
     padding: 50px;
-    position: absolute;
+    position: fixed;
 }
 
 div.aboutme{

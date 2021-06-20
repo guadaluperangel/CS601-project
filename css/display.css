@@ -5,6 +5,7 @@ body {
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: hsl(219, 38%, 49%);
+    margin: 25px 50px 75px;
 }
 
 nav{
@@ -63,6 +64,7 @@ div.gallery{
     border: 1px solid white;
     float: left;
     width: 180px;
+    margin: 25px 50px 75px;
 }
 
 div.gallery img{
@@ -84,4 +86,15 @@ footer{
     color: white;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+video{
+    right: 0;
+    padding: 50px;
+    position: absolute;
+}
+
+div.aboutme{
+    position: absolute;
+    margin: 25px 50px 75px;
 }

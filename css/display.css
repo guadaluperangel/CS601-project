@@ -3,14 +3,14 @@ body {
     padding:10px;
     color: white;
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(219, 38%, 49%);
+    font-family: Bodoni MT, Didot, Didot LT STD;
+    background-color: black;
     margin: 25px 50px 75px;
 }
 
 nav{
-    background-color: hsl(215, 50%, 34%);
-    border: 1px solid hsl(215, 50%, 34%);
+    background-color: rgb(20, 19, 19);
+    border: 1px solid black;
     position: absolute;
     right: 0px;
     top: 0px;
@@ -18,7 +18,7 @@ nav{
     display: block;
     text-align: center;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Bodoni MT, Didot, Didot LT STD;
 }
 
 
@@ -50,7 +50,7 @@ a:link{
 }
 
 a:visited{
-    color: rgb(151, 150, 150);
+    color: white;
 }
 
 .grid{
@@ -63,12 +63,12 @@ div.gallery{
     margin: 5px;
     border: 1px solid white;
     float: left;
-    width: 180px;
-    margin: 25px 50px 75px;
+    width: 200px;
+    margin: 100px 125px 150px;
 }
 
 div.gallery img{
-    width:100%;
+    width: 100%;
     height: 250px;
 }
 
@@ -85,7 +85,7 @@ footer{
     background-color: transparent;
     color: white;
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Bodoni MT, Didot, Didot LT STD;
 }
 
 video{
@@ -98,4 +98,13 @@ video{
 div.aboutme{
     position: absolute;
     margin: 25px 50px 75px;
+}
+
+table {
+    width: 600px;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid white;
 }

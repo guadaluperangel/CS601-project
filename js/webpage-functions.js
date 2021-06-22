@@ -1,38 +1,57 @@
-//variables
-var greeting = "Hello ", name = "";
-var num1, num2, total, reply;
+//html id variables
+var firstName;
+var lastName;
+var email;
+var submit;
+var alphabetCheck;
 
-//custom user greeting
-alert(greeting);
-name = prompt("what is your name?");
-alert(greeting + name + "!" + " Welcome!");
-
-//prompt the user for numbers to calculate
-do{
-    num1 = prompt("Please enter a number", "0");
-    num2 = prompt("Please enter a second number", "0");
-
-    //calulating the sum of both numbers
-    var number1 = parseInt(num1);
-    var number2 = parseInt(num2);
-
-    function calTotal(number1, number2) {
-        var totals = number1 + number2;
-        return totals;
-    }
-
-    total = calTotal(number1, number2);
-    alert("The sum of your two number is: " + total);
-
-    if (total >= 10) {
-        alert("That is a big number!");
-    } else if (total < 10) {
-        alert("That is a small number");
+//validate firstName is longer than 2 char
+function validateName() {
+    if (firstName.value.length >= 2 && firstName.value.match(alphabetCheck)) {
+        return true;
     } else {
-        alert("Sorry, something went wrong. Please enter valid numbers.");
+        alert("Please enter a firstname with two (2) or more characters.");
+        firstName.focus();
+        return false;
     }
-    reply = prompt("would you like to add numbers again? (yes/no)")
-} while (reply == "yes");
+}
 
-//thank you message
-alert("Thank you for using the program and stopping by!")
+//validate lastName is longer than 2 char
+function validateLastName() {
+    if (lastName.value.length >= 2 && lastName.value.match(alphabetCheck)) {
+        return true;
+    } else {
+        alert("Please enter a lastname with two (2) or more characters.");
+        lastName.focus();
+        return false;
+        
+    }
+}
+
+//validate email
+function validateEmail (email) {
+    if (email.value.length >= 2 && email.value.match(alphabetCheck)) {
+        return true;
+    } else {
+        alert("Please enter an email address with two (2) or more characters.");
+        email.focus();
+        return false;
+        
+    }
+}
+
+//validate all fields
+function checks () {
+
+    //html id variables
+    firstName = document.getElementById("firstName");
+    lastName = document.getElementById("lastName");
+    facilitator = document.getElementById("email");
+    submit = document.getElementById("submit");
+    alphabetCheck = "[a-z]";
+
+
+    validateEmail();
+    validateLastName();
+    validateName();
+} 
